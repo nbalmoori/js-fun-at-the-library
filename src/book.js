@@ -1,7 +1,10 @@
+// Create a function called createTitle that takes in a title and returns a modified title in a string.
+
 function createTitle(title) {
   return bookIdea = `The ${title}`
 };
 
+//Create a function called buildMainCharacter that returns a character object with key-values from the paramaters name, age, and pronouns.
 
 function buildMainCharacter(name, age, pronouns){
   var character = {
@@ -12,20 +15,22 @@ function buildMainCharacter(name, age, pronouns){
 return character
 };
 
+//Create a function called saveReview that takes the a review and array from a parameter and adds the new review to an array, so long as it is not a duplicate review.
 
 function saveReview(newReview, array){
-  if (array.includes(newReview) === true){
-    {}
-  }
-  else {
-    array.push(newReview)
+  if (array.includes(newReview) === false){
+   return array.push(newReview)
   }
 };
+
+//Create a function called calculatePageCount that returns the number of letters in the title multiplied by 20.
 
 function calculatePageCount(bookTitle) {
   return bookPageCount = (bookTitle.length * 20);
 };
-//
+
+//Create a function called writeBook that returns a book object with key-values from the parameters bookTitle, bookCharacter and genre, as well as the pageCount from the calculatePageCount function.
+
 function writeBook(bookTitle, bookCharacter, genre) {
   var newBook = {
     title: bookTitle,
@@ -36,14 +41,7 @@ function writeBook(bookTitle, bookCharacter, genre) {
   return newBook;
 };
 
-
-var ghoulTitle = createTitle("Teenage Ghoul");
-var ghoulCharacter = buildMainCharacter("Vassya", 16, "she/her");
-var ghoulBook = writeBook(ghoulTitle, ghoulCharacter, "mystery");
-
-console.log(ghoulBook.pageCount);
-console.log(ghoulBook.pageCount*.75);
-
+//Create function called editBook that returns the page count key value from the bookTitle parameter and multiplies it by 75%.
 
 function editBook(bookTitle) {
 return bookTitle.pageCount = bookTitle.pageCount*.75
